@@ -111,7 +111,7 @@ Antidote-2002.github.io/
 ├── apple-touch-icon.png
 └── assets/
     └── images/
-        ├── profile.jpeg
+        ├── profile.png
         └── rkmv-campus.jpeg
 ```
 
