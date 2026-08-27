@@ -6,6 +6,10 @@
   <meta name="description" content="Personal portfolio of Antariksha Jana">
   <title>Antariksha Jana | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 </head>
 <body>
   <header class="site-header">
@@ -20,10 +24,12 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#interests">Interests</a></li>
       </ul>
 
-      <a class="nav-cta" href="mailto:antarikshajana@gmail.com">Contact</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -33,71 +39,143 @@
       <div class="hero-glow hero-glow-two"></div>
 
       <div class="hero-copy">
-        <p class="eyebrow">ENGINEERING GRADUATE • COMPUTER SCIENCE ASPIRANT</p>
-        <h1>Building a stronger foundation in <span>software & computer science.</span></h1>
+        <p class="eyebrow">CIVIL ENGINEERING → COMPUTER SCIENCE @ IIIT HYDERABAD</p>
+        <h1>I changed lanes.<br><span>Now I build in code.</span></h1>
         <p class="hero-text">
-          I’m Antariksha Jana, a Jadavpur University engineering graduate with a growing focus on
-          programming, data structures, algorithms, operating systems, computer networks and software development.
+          I completed my B.E. in Civil Engineering at Jadavpur University, but I wanted to explore
+          Computer Science more deeply. That curiosity turned into a deliberate switch, and in 2026
+          I joined IIIT Hyderabad for an M.Tech in CSIS. I’m now building depth in algorithms, systems
+          and software development.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#achievements">View highlights</a>
+          <a class="button button-primary" href="#about">See the switch ↓</a>
+          <a class="button button-secondary" href="#achievements">Exam highlights</a>
         </div>
 
         <div class="hero-links">
-          <a href="https://github.com/Antidote-2002" target="_blank" rel="noopener">GitHub ↗</a>
-          <!-- Replace the LinkedIn URL below with your exact profile URL. -->
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="mailto:antarikshajana@gmail.com">Email ↗</a>
+          <a class="social-link" href="https://github.com/Antidote-2002" target="_blank" rel="noopener" aria-label="Open Antariksha Jana's GitHub profile">
+            <span class="social-icon">GH</span>
+            <span>
+              <small>Code & projects</small>
+              <strong>GitHub</strong>
+            </span>
+            <b>↗</b>
+          </a>
+
+          <a class="social-link" href="https://www.linkedin.com/in/antariksha-jana-33b076229" target="_blank" rel="noopener" aria-label="Open Antariksha Jana's LinkedIn profile">
+            <span class="social-icon">in</span>
+            <span>
+              <small>Professional profile</small>
+              <strong>LinkedIn</strong>
+            </span>
+            <b>↗</b>
+          </a>
+
+          <a class="social-link" href="#contact" aria-label="Open contact form">
+            <span class="social-icon">✉</span>
+            <span>
+              <small>Private contact</small>
+              <strong>Message me</strong>
+            </span>
+            <b>↓</b>
+          </a>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="portrait-frame">
-          <img src="assets/images/profile.jpg" alt="Portrait of Antariksha Jana">
-          <span class="portrait-badge">Open to learning</span>
+          <img src="assets/images/profile.jpeg" alt="Portrait of Antariksha Jana">
+          <span class="portrait-badge"><span class="status-dot"></span> M.Tech CSIS @ IIITH</span>
+          <span class="orbit-tag orbit-one">C++</span>
+          <span class="orbit-tag orbit-two">DSA</span>
+          <span class="orbit-tag orbit-three">OS</span>
         </div>
 
         <div class="stat-card stat-card-one">
-          <strong>63</strong>
-          <span>ISI GMR 2026</span>
+          <strong>994</strong>
+          <span>GATE CS AIR 2026</span>
         </div>
 
         <div class="stat-card stat-card-two">
-          <strong>994</strong>
-          <span>GATE CS AIR 2026</span>
+          <strong>63</strong>
+          <span>ISI GMR 2026</span>
         </div>
       </div>
     </section>
 
+    <div class="ticker" aria-label="Areas I am exploring">
+      <div class="ticker-track">
+        <span>CIVIL → CS</span><b>✦</b><span>C++</span><b>✦</b><span>ALGORITHMS</span><b>✦</b>
+        <span>OPERATING SYSTEMS</span><b>✦</b><span>IIIT HYDERABAD</span><b>✦</b><span>PYTHON</span><b>✦</b>
+        <span>CIVIL → CS</span><b>✦</b><span>C++</span><b>✦</b><span>ALGORITHMS</span><b>✦</b>
+        <span>OPERATING SYSTEMS</span><b>✦</b><span>IIIT HYDERABAD</span><b>✦</b><span>PYTHON</span><b>✦</b>
+      </div>
+    </div>
+
     <section class="section" id="about">
       <div class="section-intro">
-        <p class="eyebrow">ABOUT</p>
-        <h2>A technical journey built on persistence and fundamentals.</h2>
+        <p class="eyebrow">MY STORY</p>
+        <h2>From Civil Engineering to Computer Science.</h2>
+      </div>
+
+      <div class="journey-strip">
+        <article class="journey-stop journey-civil">
+          <span class="journey-icon">🏗️</span>
+          <p>2021 — 2025</p>
+          <h3>Civil Engineering</h3>
+          <span>Jadavpur University</span>
+        </article>
+
+        <div class="journey-arrow" aria-hidden="true">→</div>
+
+        <article class="journey-stop journey-switch">
+          <span class="journey-icon">💡</span>
+          <p>The turning point</p>
+          <h3>Wanted to explore CS</h3>
+          <span>GATE · PGEE · focused learning</span>
+        </article>
+
+        <div class="journey-arrow" aria-hidden="true">→</div>
+
+        <article class="journey-stop journey-cs">
+          <span class="journey-icon">💻</span>
+          <p>2026 — Current</p>
+          <h3>M.Tech in CSIS</h3>
+          <span>IIIT Hyderabad</span>
+        </article>
       </div>
 
       <div class="about-grid">
         <article class="panel about-main">
           <p class="lead">
-            My academic background began in engineering at Jadavpur University. Alongside that foundation,
-            I have developed skills in C++, Python and SQL, while studying core computer science areas such
-            as data structures, algorithms, object-oriented programming, operating systems, computer networks
-            and computer architecture.
+            I did my B.E. in <strong>Civil Engineering at Jadavpur University</strong>. During that journey,
+            I became increasingly curious about Computer Science and wanted to understand how software,
+            algorithms and systems actually work.
           </p>
           <p>
-            Competitive examinations in 2026 became an important milestone in that transition, with ranks in
-            ISI Admission Test, IIIT Hyderabad PGEE and GATE Computer Science.
+            I decided to pursue that curiosity seriously. My 2026 results in GATE Computer Science,
+            the ISI Admission Test and IIIT Hyderabad PGEE marked that transition, and I joined
+            <strong>IIIT Hyderabad for an M.Tech in CSIS</strong>.
+          </p>
+          <p>
+            Today I’m focused on strengthening my foundations in algorithms, operating systems,
+            computer networks and software development — and enjoying the process of learning a new field.
           </p>
         </article>
 
         <aside class="panel quick-facts">
           <div>
-            <span>Based in</span>
-            <strong>India</strong>
+            <span>Currently</span>
+            <strong>M.Tech CSIS @ IIIT Hyderabad</strong>
+          </div>
+          <div>
+            <span>Previous degree</span>
+            <strong>B.E. Civil Engineering @ Jadavpur University</strong>
           </div>
           <div>
             <span>GitHub</span>
-            <strong>Antidote-2002</strong>
+            <strong><a class="inline-profile-link" href="https://github.com/Antidote-2002" target="_blank" rel="noopener">Antidote-2002 ↗</a></strong>
           </div>
           <div>
             <span>Languages</span>
@@ -108,36 +186,86 @@
     </section>
 
     <section class="section section-soft" id="education">
-      <div class="section-intro">
+      <div class="section-intro education-intro">
         <p class="eyebrow">EDUCATION</p>
-        <h2>Academic background</h2>
+        <h2>The places that shaped my journey.</h2>
+        <p class="section-subtitle">
+          Three institutions, two disciplines, and one increasingly strong pull toward Computer Science.
+        </p>
       </div>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="timeline-year">2021 — 2025</span>
-          <div class="timeline-card">
-            <p class="timeline-kicker">Bachelor of Engineering (B.E.)</p>
-            <h3>Jadavpur University, Kolkata</h3>
-            <p>CGPA: 6.81 / 10.00</p>
+      <div class="alma-grid">
+        <article class="alma-card alma-current">
+          <div class="alma-photo">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:Redirect/file/IIIT%20Hyderabad%20campus%20in%20Hyderabad%2002.jpg?width=1280"
+              alt="IIIT Hyderabad campus"
+              loading="lazy">
+            <span class="alma-badge">CURRENT</span>
+          </div>
+          <div class="alma-content">
+            <p class="alma-years">2026 — Current</p>
+            <p class="timeline-kicker">Master of Technology · CSIS</p>
+            <h3>IIIT Hyderabad</h3>
+            <p>
+              International Institute of Information Technology, Hyderabad.
+              This is where I am now exploring Computer Science formally and building depth in systems,
+              algorithms and software.
+            </p>
+            <a class="alma-link" href="https://www.iiit.ac.in/" target="_blank" rel="noopener">
+              Visit institute ↗
+            </a>
+            <p class="image-credit">
+              Campus photo: Pinakpani / Wikimedia Commons, CC BY-SA.
+            </p>
           </div>
         </article>
 
-        <article class="timeline-item">
-          <span class="timeline-year">2019 — 2021</span>
-          <div class="timeline-card">
-            <p class="timeline-kicker">Class XII · Higher Secondary</p>
-            <h3>Ramakrishna Mission Vidyabhavan, Midnapore</h3>
-            <p>Percentage: 96.2%</p>
+        <article class="alma-card">
+          <div class="alma-photo">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jadavpur%20University%204%20no%20Gate%2001.jpg?width=1280"
+              alt="Jadavpur University gate number 4"
+              loading="lazy">
+          </div>
+          <div class="alma-content">
+            <p class="alma-years">2021 — 2025</p>
+            <p class="timeline-kicker">Bachelor of Engineering · Civil Engineering</p>
+            <h3>Jadavpur University</h3>
+            <p>
+              Kolkata · CGPA: 6.81 / 10.00. I completed my B.E. in Civil Engineering here before
+              deciding to make a deliberate move toward Computer Science.
+            </p>
+            <a class="alma-link" href="https://jadavpuruniversity.in/" target="_blank" rel="noopener">
+              Visit university ↗
+            </a>
+            <p class="image-credit">
+              Gate photo: Pinakpani / Wikimedia Commons, CC BY-SA 4.0.
+            </p>
           </div>
         </article>
 
-        <article class="timeline-item">
-          <span class="timeline-year">2018 — 2019</span>
-          <div class="timeline-card">
-            <p class="timeline-kicker">Class X · Secondary</p>
-            <h3>Ramakrishna Mission Vidyabhavan, Midnapore</h3>
-            <p>Percentage: 96.57%</p>
+        <article class="alma-card">
+          <div class="alma-photo">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4E1BAQEMMtMJJG_XkQ/company-background_10000/company-background_10000/0/1659084020662/rkmvmid_cover?e=2147483647&amp;t=R7lSfInItgJ5_50StDMB-bkvufCzAnFux1R3RFJJMCs&amp;v=beta"
+              alt="Ramakrishna Mission Vidyabhavan, Midnapore campus"
+              loading="lazy">
+          </div>
+          <div class="alma-content">
+            <p class="alma-years">2018 — 2021</p>
+            <p class="timeline-kicker">Secondary & Higher Secondary</p>
+            <h3>Ramakrishna Mission Vidyabhavan</h3>
+            <p>
+              Midnapore, West Bengal. Class XII: 96.2% · Class X: 96.57%.
+              My school years here built the academic foundation that came before engineering and CS.
+            </p>
+            <a class="alma-link" href="https://www.rkmvmidnapore.org/" target="_blank" rel="noopener">
+              Visit school ↗
+            </a>
+            <p class="image-credit">
+              Campus image source: Ramakrishna Mission Vidyabhavan public profile.
+            </p>
           </div>
         </article>
       </div>
@@ -152,23 +280,23 @@
       <div class="achievement-grid">
         <article class="achievement-card feature-card">
           <span class="achievement-number">01</span>
+          <p class="achievement-tag">GATE CS · 2026</p>
+          <h3>All India Rank 994</h3>
+          <p>Computer Science and Information Technology.</p>
+        </article>
+
+        <article class="achievement-card">
+          <span class="achievement-number">02</span>
           <p class="achievement-tag">ISI Admission Test · 2026</p>
           <h3>General Merit Rank 63</h3>
           <p>MTech in Computer Science and Cryptology & Security.</p>
         </article>
 
         <article class="achievement-card">
-          <span class="achievement-number">02</span>
+          <span class="achievement-number">03</span>
           <p class="achievement-tag">IIIT Hyderabad PGEE · 2026</p>
           <h3>All India Rank 151</h3>
           <p>Post Graduate Entrance Examination.</p>
-        </article>
-
-        <article class="achievement-card">
-          <span class="achievement-number">03</span>
-          <p class="achievement-tag">GATE CS · 2026</p>
-          <h3>All India Rank 994</h3>
-          <p>Computer Science and Information Technology.</p>
         </article>
 
         <article class="achievement-card">
@@ -204,7 +332,7 @@
         <article class="skill-group">
           <p>Core CS & DSA</p>
           <div class="chips">
-            <span>Data Structures</span><span>Algorithms</span><span>OOP</span>
+            <span>Data Structures</span><span>Algorithms</span>
           </div>
         </article>
 
@@ -224,43 +352,278 @@
       </div>
     </section>
 
-    <section class="section" id="gallery">
-      <div class="section-intro gallery-heading">
-        <div>
-          <p class="eyebrow">GALLERY</p>
-          <h2>A few snapshots</h2>
-        </div>
-        <p class="gallery-note">
-          Replace the placeholder images in <code>assets/images/</code> with your own photographs.
+    
+    <section class="section hobbies-section" id="hobbies">
+      <div class="section-intro hobbies-intro">
+        <p class="eyebrow">OFF THE CLOCK</p>
+        <h2>Things I’m into when I’m not debugging something.</h2>
+        <p class="section-subtitle">
+          A mix of games, sport, watching people think several moves ahead, and occasionally putting pencil to paper.
         </p>
       </div>
 
-      <div class="gallery-grid">
-        <figure class="gallery-item gallery-wide">
-          <img src="assets/images/gallery-1.jpg" alt="Gallery photograph 1">
-          <figcaption>Campus / academic life</figcaption>
-        </figure>
+      <div class="hobby-grid">
+        <article class="hobby-card hobby-gaming">
+          <div class="hobby-image">
+            <img src="https://images.unsplash.com/photo-1665041974623-d398d035023e?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=72&w=1400" alt="Generic gaming controller setup" loading="lazy">
+            <span class="hobby-number">01</span>
+          </div>
+          <div class="hobby-copy">
+            <div class="hobby-tags">
+              <span>FIFA</span>
+              <span>COD</span>
+            </div>
+            <h3>Gaming</h3>
+            <p>
+              FIFA and Call of Duty are my usual picks when I want to switch gears and play something.
+            </p>
+          </div>
+        </article>
 
-        <figure class="gallery-item">
-          <img src="assets/images/gallery-2.jpg" alt="Gallery photograph 2">
-          <figcaption>Personal snapshot</figcaption>
-        </figure>
+        <article class="hobby-card hobby-chess">
+          <div class="hobby-image">
+            <img src="https://images.unsplash.com/photo-1715321624273-3bd414bfbeeb?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=72&w=1400" alt="Generic chess board" loading="lazy">
+            <span class="hobby-number">02</span>
+          </div>
+          <div class="hobby-copy">
+            <div class="hobby-tags">
+              <span>WATCHING</span>
+              <span>CHESS</span>
+            </div>
+            <h3>Chess</h3>
+            <p>
+              I like watching chess even though I can’t really play it myself. Spectator mode is enough for now.
+            </p>
+          </div>
+        </article>
 
-        <figure class="gallery-item">
-          <img src="assets/images/gallery-3.jpg" alt="Gallery photograph 3">
-          <figcaption>Something I enjoy</figcaption>
-        </figure>
+        <article class="hobby-card hobby-table-tennis">
+          <div class="hobby-image">
+            <img src="https://images.unsplash.com/photo-1708268418738-4863baa9cf72?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=72&w=1400" alt="Generic table tennis paddle and ball" loading="lazy">
+            <span class="hobby-number">03</span>
+          </div>
+          <div class="hobby-copy">
+            <div class="hobby-tags">
+              <span>OCCASIONAL</span>
+              <span>PLAY</span>
+            </div>
+            <h3>Table Tennis</h3>
+            <p>
+              I occasionally play table tennis — not a daily thing, but always fun when I get the chance.
+            </p>
+          </div>
+        </article>
+
+        <article class="hobby-card hobby-football">
+          <div class="hobby-image">
+            <img src="https://images.unsplash.com/photo-1777529565213-1779f212c32a?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=72&w=1400" alt="Generic football match in a stadium" loading="lazy">
+            <span class="hobby-number">04</span>
+          </div>
+          <div class="hobby-copy">
+            <div class="hobby-tags">
+              <span>FOOTBALL</span>
+              <span>MATCH DAYS</span>
+            </div>
+            <h3>Watching Football</h3>
+            <p>
+              Football is one of the sports I genuinely enjoy following and watching.
+            </p>
+          </div>
+        </article>
+
+        <article class="hobby-card hobby-sketch">
+          <div class="hobby-image">
+            <img src="https://images.unsplash.com/photo-1760561993754-8dcdb1a39487?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=72&w=1400" alt="Generic sketchbook and pencil" loading="lazy">
+            <span class="hobby-number">05</span>
+          </div>
+          <div class="hobby-copy">
+            <div class="hobby-tags">
+              <span>PENCIL</span>
+              <span>PAPER</span>
+            </div>
+            <h3>Sketching</h3>
+            <p>
+              I also like sketching — a quieter creative break from screens and coursework.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="contact-section">
-      <p class="eyebrow">CONTACT</p>
-      <h2>Let’s connect.</h2>
-      <p>For academic or professional conversations, feel free to reach out.</p>
+<section class="section section-soft" id="focus">
+      <div class="section-intro">
+        <p class="eyebrow">CURRENTLY EXPLORING</p>
+        <h2>The CS rabbit holes I’m happily going down.</h2>
+      </div>
 
-      <div class="contact-actions">
-        <a class="button button-primary" href="mailto:antarikshajana@gmail.com">antarikshajana@gmail.com</a>
-        <a class="button button-secondary light-button" href="https://github.com/Antidote-2002" target="_blank" rel="noopener">GitHub profile</a>
+      <div class="focus-grid">
+        <article class="panel focus-card">
+          <span class="focus-index">01</span>
+          <h3>Algorithms & Data Structures</h3>
+          <p>Strengthening problem-solving fundamentals through data structures, algorithms and object-oriented programming.</p>
+        </article>
+
+        <article class="panel focus-card">
+          <span class="focus-index">02</span>
+          <h3>Systems Foundations</h3>
+          <p>Studying operating systems, computer networks and computer architecture to understand how software interacts with the underlying system.</p>
+        </article>
+
+        <article class="panel focus-card">
+          <span class="focus-index">03</span>
+          <h3>Software Development</h3>
+          <p>Working with C++, Python, SQL, Git, GitHub and VS Code while developing stronger software-development habits.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="interests">
+      <div class="section-intro">
+        <p class="eyebrow">INTERESTS & HOBBIES</p>
+        <h2>What keeps me curious</h2>
+      </div>
+
+      <div class="interest-grid">
+        <article class="panel interest-card">
+          <p class="interest-label">Technical interests</p>
+          <div class="interest-list">
+            <span>Algorithms</span>
+            <span>Operating Systems</span>
+            <span>Computer Networks</span>
+            <span>Software Development</span>
+            <span>Developer Tools</span>
+          </div>
+        </article>
+
+        <article class="panel interest-card interest-personal">
+          <p class="interest-label">Beyond coursework</p>
+          <h3>Learning a new field by actually building things.</h3>
+          <p>
+            I enjoy exploring tools, understanding how systems work and turning unfamiliar topics
+            into something I can implement and explain.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-heading">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Send me a message.</h2>
+        <p>
+          Use this form to get in touch.
+          Leave your email below so I can reply to you.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mvkopqzd"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-field">
+              <label for="contact-name">Your name</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Ada Lovelace"
+                required
+              >
+            </div>
+
+            <div class="form-field">
+              <label for="contact-email">Your email</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-subject">Subject</label>
+            <input
+              id="contact-subject"
+              name="subject"
+              type="text"
+              placeholder="What would you like to talk about?"
+              maxlength="120"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="6"
+              placeholder="Write your message here..."
+              maxlength="3000"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-honeypot" aria-hidden="true">
+            <label for="contact-company">Company</label>
+            <input
+              id="contact-company"
+              name="_gotcha"
+              type="text"
+              tabindex="-1"
+              autocomplete="off"
+            >
+          </div>
+
+          <button class="form-submit" type="submit">
+            <span>Send message</span>
+            <b>↗</b>
+          </button>
+
+          <p class="form-privacy">
+            Your contact details are submitted only so I can respond to your message.
+          </p>
+        </form>
+
+        <aside class="contact-side">
+          <p class="contact-side-label">Elsewhere</p>
+          <h3>Prefer profiles?</h3>
+          <p>You can also find my public work and professional profile here.</p>
+
+          <a class="contact-profile-link" href="https://github.com/Antidote-2002" target="_blank" rel="noopener">
+            <span class="contact-card-icon">GH</span>
+            <span>
+              <small>Repositories & activity</small>
+              <strong>GitHub</strong>
+            </span>
+            <b>↗</b>
+          </a>
+
+          <a class="contact-profile-link" href="https://www.linkedin.com/in/antariksha-jana-33b076229" target="_blank" rel="noopener">
+            <span class="contact-card-icon">in</span>
+            <span>
+              <small>Professional profile</small>
+              <strong>LinkedIn</strong>
+            </span>
+            <b>↗</b>
+          </a>
+
+          <!-- <div class="privacy-note">
+            <strong>Why no email address?</strong>
+            <p>
+              I keep it off the public page to reduce scraping and spam.
+              The form forwards your message privately.
+            </p>
+          </div> -->
+        </aside>
       </div>
     </section>
   </main>

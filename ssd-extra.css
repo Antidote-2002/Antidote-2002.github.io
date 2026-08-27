@@ -1,0 +1,401 @@
+:root {
+  --ssd-bg: #f5f7fb;
+  --ssd-surface: #ffffff;
+  --ssd-ink: #182033;
+  --ssd-muted: #64748b;
+  --ssd-line: #dbe3ee;
+  --ssd-navy: #10172b;
+  --ssd-blue: #2855e7;
+  --ssd-violet: #6d4aff;
+  --ssd-cyan: #0f92b8;
+  --ssd-soft-blue: #edf3ff;
+  --ssd-radius: 22px;
+  --ssd-shadow: 0 18px 55px rgba(15, 23, 42, 0.09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 !important;
+  padding: 34px 0 64px !important;
+  color: var(--ssd-ink) !important;
+  background:
+    radial-gradient(circle at 9% 3%, rgba(40, 85, 231, 0.12), transparent 24rem),
+    radial-gradient(circle at 91% 12%, rgba(109, 74, 255, 0.10), transparent 25rem),
+    var(--ssd-bg) !important;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+}
+
+/* The original page is table-based. These rules turn those same tables into clean cards. */
+body > table {
+  width: min(1160px, calc(100% - 34px)) !important;
+  margin: 22px auto !important;
+  border-spacing: 0 !important;
+}
+
+body > table[border="0"] {
+  overflow: hidden;
+  border: 1px solid rgba(219, 227, 238, 0.9) !important;
+  border-radius: var(--ssd-radius);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--ssd-shadow);
+}
+
+body > table[border="0"] > tbody > tr > td {
+  padding: 26px 32px !important;
+}
+
+/* Hero heading */
+#home {
+  position: relative;
+  margin: 8px auto 18px !important;
+  max-width: 900px;
+  color: var(--ssd-navy) !important;
+  font-size: clamp(2.5rem, 6vw, 4.8rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.055em;
+}
+
+#home::before {
+  content: "SSD  •  MONSOON 2026";
+  display: block;
+  margin-bottom: 18px;
+  color: var(--ssd-blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+#home::after {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 5px;
+  margin: 20px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--ssd-blue), var(--ssd-violet));
+}
+
+#home + h3,
+#home + h3 + h3 {
+  color: var(--ssd-muted) !important;
+  font-weight: 600 !important;
+}
+
+/* Existing navigation row */
+body > table:first-of-type tr:nth-child(2) td {
+  text-align: center;
+  line-height: 2.8;
+}
+
+body > table:first-of-type tr:nth-child(2) a {
+  display: inline-block;
+  margin: 3px 3px;
+  padding: 7px 12px;
+  border: 1px solid var(--ssd-line);
+  border-radius: 999px;
+  background: #fff;
+  color: #334155 !important;
+  text-decoration: none !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: transform 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+body > table:first-of-type tr:nth-child(2) a:hover {
+  transform: translateY(-2px);
+  border-color: #b7c6ff;
+  color: var(--ssd-blue) !important;
+  box-shadow: 0 8px 20px rgba(40, 85, 231, 0.10);
+}
+
+/* Section anchors already present in the original HTML */
+#about,
+#lecture,
+#cpolicy,
+#schedule,
+#lab,
+#activity,
+#staff {
+  display: inline-block;
+  scroll-margin-top: 28px;
+  color: var(--ssd-navy) !important;
+  font-size: 1.38rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+#about::before,
+#lecture::before,
+#cpolicy::before,
+#schedule::before,
+#lab::before,
+#activity::before,
+#staff::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 10px;
+  border-radius: 3px;
+  background: linear-gradient(135deg, var(--ssd-blue), var(--ssd-violet));
+  transform: translateY(-1px) rotate(45deg);
+}
+
+p {
+  color: #3b475c;
+}
+
+ul,
+ol {
+  padding-left: 30px !important;
+}
+
+li {
+  margin: 10px 0;
+  color: #3b475c;
+}
+
+li b,
+td > b {
+  color: #243047;
+}
+
+hr {
+  height: 1px !important;
+  margin: 28px 0 !important;
+  border: 0 !important;
+  background: linear-gradient(90deg, transparent, #cbd5e1 12%, #cbd5e1 88%, transparent) !important;
+}
+
+/* Links */
+a {
+  color: var(--ssd-blue) !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+
+a:hover {
+  color: var(--ssd-violet) !important;
+}
+
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.72em;
+  opacity: 0.55;
+}
+
+a[href="#home"] {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--ssd-soft-blue);
+  color: var(--ssd-blue) !important;
+  font-size: 0.82em;
+  text-decoration: none !important;
+}
+
+/* Course policy readability */
+#cpolicy + ul > li,
+#cpolicy ~ ul > li {
+  margin-bottom: 16px;
+}
+
+/* All bordered data tables */
+table[border="1"] {
+  width: min(1160px, calc(100% - 34px)) !important;
+  margin: 24px auto !important;
+  border: 1px solid var(--ssd-line) !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: var(--ssd-radius);
+  overflow: hidden;
+  background: var(--ssd-surface);
+  box-shadow: var(--ssd-shadow);
+  font-size: 16px !important;
+}
+
+table[border="1"] th,
+table[border="1"] td {
+  padding: 13px 14px !important;
+  border-right: 1px solid #e5eaf1 !important;
+  border-bottom: 1px solid #e5eaf1 !important;
+  vertical-align: middle !important;
+}
+
+table[border="1"] th:last-child,
+table[border="1"] td:last-child {
+  border-right: 0 !important;
+}
+
+table[border="1"] tr:last-child td {
+  border-bottom: 0 !important;
+}
+
+table[border="1"] th {
+  color: #fff !important;
+  background: linear-gradient(135deg, #111a31, #1e2b50) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.01em;
+}
+
+table[border="1"] tbody tr:nth-child(even) td {
+  background: #f8fafe;
+}
+
+table[border="1"] tbody tr:hover td {
+  background: #edf3ff !important;
+}
+
+/* Section title rows inside lecture/lab/exam tables */
+.tg > tbody > tr:first-child > td,
+table[border="1"] > tbody > tr:first-child > td[colspan] {
+  padding: 20px 22px !important;
+  background: linear-gradient(90deg, #f8faff, #eef3ff) !important;
+}
+
+.tg > tbody > tr:first-child p,
+table[border="1"] > tbody > tr:first-child p {
+  margin: 0;
+}
+
+.light-text-row {
+  color: #91a0b5 !important;
+}
+
+/* Make the grading distribution nested table feel like a compact panel */
+li table[border="1"] {
+  width: min(760px, 100%) !important;
+  margin: 20px auto !important;
+  box-shadow: none;
+}
+
+/* Footer cards */
+body > table:last-of-type,
+body > table:nth-last-of-type(2) {
+  box-shadow: none;
+}
+
+#txt {
+  margin: 14px 0;
+  color: var(--ssd-muted);
+  font-size: 0.78rem;
+}
+
+::selection {
+  color: #fff;
+  background: var(--ssd-blue);
+}
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 16px !important;
+    font-size: 16px !important;
+  }
+
+  body > table,
+  table[border="1"] {
+    width: calc(100% - 20px) !important;
+  }
+
+  body > table[border="0"] > tbody > tr > td {
+    padding: 20px !important;
+  }
+
+  table[border="1"] {
+    font-size: 13px !important;
+  }
+
+  table[border="1"] th,
+  table[border="1"] td {
+    padding: 9px 8px !important;
+    word-break: normal;
+  }
+}
+
+@media (max-width: 620px) {
+  #home {
+    font-size: 2.35rem !important;
+  }
+
+  body > table:first-of-type tr:nth-child(2) td {
+    line-height: 2.4;
+  }
+
+  body > table:first-of-type tr:nth-child(2) a {
+    padding: 5px 9px;
+    font-size: 0.78rem;
+  }
+
+  #about,
+  #lecture,
+  #cpolicy,
+  #schedule,
+  #lab,
+  #activity,
+  #staff {
+    font-size: 1.1rem !important;
+  }
+
+  table[border="1"] {
+    font-size: 11px !important;
+  }
+
+  table[border="1"] th,
+  table[border="1"] td {
+    padding: 7px 5px !important;
+  }
+}
+
+
+/* =========================================================
+   RED ACCENT OVERRIDE — final theme
+   ========================================================= */
+
+:root {
+  --ssd-bg: #fff8f8;
+  --ssd-surface: #ffffff;
+  --ssd-ink: #26181b;
+  --ssd-muted: #766268;
+  --ssd-line: #eedadd;
+  --ssd-navy: #31090f;
+  --ssd-blue: #b31220;
+  --ssd-violet: #e63946;
+  --ssd-cyan: #c1121f;
+  --ssd-soft-blue: #fff0f1;
+}
+
+body {
+  background:
+    radial-gradient(circle at 9% 3%, rgba(193, 18, 31, 0.10), transparent 24rem),
+    radial-gradient(circle at 91% 12%, rgba(230, 57, 70, 0.08), transparent 25rem),
+    var(--ssd-bg) !important;
+}
+
+body > table:first-of-type tr:nth-child(2) a:hover {
+  border-color: #e4aab0;
+  color: var(--ssd-blue) !important;
+  box-shadow: 0 8px 20px rgba(193, 18, 31, 0.10);
+}
+
+table[border="1"] tbody tr:hover td {
+  background: #fff0f1 !important;
+}
+
+table[border="1"] th {
+  background: linear-gradient(135deg, #3b0a11, #701522) !important;
+}
+
+::selection {
+  background: #f6b9bf;
+  color: #351016;
+}
