@@ -1,8 +1,100 @@
-# SSD HTML/CSS Practice Work — Final Project
+# Antariksha Jana — Personal Portfolio & SSD HTML/CSS Coursework
 
-This repository is ready to publish as the GitHub Pages site for **Antidote-2002**.
+This repository contains my personal GitHub Pages portfolio and the styled SSD course page created for the HTML/CSS coursework.
 
-## Final structure
+## Live Pages
+
+- **Personal portfolio:** https://Antidote-2002.github.io/
+- **Styled SSD course page:** https://Antidote-2002.github.io/ssdcoursepage.html
+
+The submission URLs are also stored in `2026202018_htcs.txt`.
+
+---
+
+## Personal Portfolio
+
+The main page is `index.html`, styled by `style.css`.
+
+The portfolio presents my academic journey from **B.E. in Civil Engineering at Jadavpur University** to **M.Tech in CSIS at IIIT Hyderabad**, along with my academic achievements, technical interests, skills and hobbies.
+
+### Main features
+
+- Responsive crimson/red visual theme
+- Animated and interactive CSS effects
+- About and academic journey sections
+- Education section with alma-mater photographs
+- Academic achievements
+- Technical skills and current areas of exploration
+- Hobbies and interests:
+  - Gaming — FIFA and Call of Duty
+  - Watching chess
+  - Occasional table tennis
+  - Watching football
+  - Sketching
+- Clickable GitHub and LinkedIn links
+- Private contact form powered by Formspree
+- Custom `AJ` favicon for the browser tab
+- Responsive layouts for desktop and mobile
+- Reduced-motion support for users who prefer less animation
+
+### Contact privacy
+
+The public page does **not** display my personal email address.
+
+Visitors can contact me through the Formspree form in `index.html`. The form collects the visitor's name, email, subject and message so I can reply without publishing my own email address on the website.
+
+GitHub and LinkedIn remain directly accessible from the site.
+
+---
+
+## Education Images
+
+The Education section currently uses:
+
+- **IIIT Hyderabad** — Wikimedia Commons image loaded externally
+- **Jadavpur University** — Wikimedia Commons image loaded externally
+- **Ramakrishna Mission Vidyabhavan, Midnapore** — stored locally as `assets/images/rkmv-campus.jpeg`
+- **Profile photo** — stored locally as `assets/images/profile.jpeg`
+
+The site no longer contains a personal photo gallery.
+
+Generic hobby images are loaded from Unsplash and are used only as visual illustrations of the hobbies.
+
+Image attribution information is kept in `IMAGE_CREDITS.md`.
+
+---
+
+## SSD Course Page
+
+`ssdcoursepage.html` contains the styled version of the **CS6.302 — Software System Development, Monsoon 2026** course page.
+
+The original course-page structure and content are retained, while additional styling is loaded through:
+
+```css
+@import url("ssd-extra.css");
+```
+
+`ssd-extra.css` adds:
+
+- red-accented visual styling
+- improved typography and spacing
+- card-like table presentation
+- styled navigation links
+- gradients and shadows
+- hover effects
+- responsive layouts
+- improved mobile readability
+- CSS pseudo-elements and attribute selectors
+
+The SSD page remains separate from the personal portfolio so it can be opened directly at:
+
+```text
+https://Antidote-2002.github.io/ssdcoursepage.html
+```
+
+---
+
+## Repository Structure
 
 ```text
 Antidote-2002.github.io/
@@ -11,290 +103,74 @@ Antidote-2002.github.io/
 ├── ssdcoursepage.html
 ├── ssd-extra.css
 ├── 2026202018_htcs.txt
+├── IMAGE_CREDITS.md
 ├── README.md
+├── favicon.svg
+├── favicon.ico
+├── favicon-32x32.png
+├── apple-touch-icon.png
 └── assets/
     └── images/
-        ├── profile.jpg
-        ├── gallery-1.jpg
-        ├── gallery-2.jpg
-        └── gallery-3.jpg
+        ├── profile.jpeg
+        └── rkmv-campus.jpeg
 ```
 
-The résumé PDF is intentionally **not** included in this website.
+---
 
-## What is included
+## Technology Used
 
-### Personal page — `index.html`
+- HTML5
+- CSS3
+- CSS Grid
+- Flexbox
+- Responsive media queries
+- CSS animations and transitions
+- Pseudo-elements
+- Formspree for the private contact form
+- Git and GitHub
+- GitHub Pages
 
-- About
-- Education
-- Academic achievements
-- Skills
-- Academic focus
-- Interests & hobbies
-- Picture gallery
-- Contact/GitHub information
-- Responsive design for desktop and mobile
+The portfolio is intentionally lightweight and does not require a JavaScript framework or build system.
 
-Important personal-site choices:
+---
 
-- GATE CS AIR 994 is given highest priority among the 2026 exam achievements.
-- Programming skills are **C++, Python and SQL**. C is not listed.
-- No work experience has been invented. The page uses an Academic Focus section instead.
-- No résumé PDF is published.
+## Running Locally
 
-### SSD page — `ssdcoursepage.html`
-
-The page keeps the SSD course's table-based structure, section IDs and course content, while loading the extra styling through the original `<style>` area:
-
-```css
-@import url("ssd-extra.css");
-```
-
-The extra stylesheet demonstrates:
-
-- element selectors
-- class selectors
-- ID selectors
-- child/descendant selectors
-- attribute selectors
-- `:hover`
-- `:nth-child()`
-- `::before` / `::after`
-- responsive media queries
-- gradients, shadows and modern spacing
-
-## 1. Replace the images
-
-All four image files currently contain placeholders. You only need to overwrite them; **do not change their filenames**.
-
-### Profile photo
-
-Put your profile photo here:
-
-```text
-assets/images/profile.jpg
-```
-
-A portrait crop (roughly 4:5) works best.
-
-Example:
-
-```bash
-cp ~/Pictures/my-profile.jpg assets/images/profile.jpg
-```
-
-### Gallery images
-
-Overwrite:
-
-```text
-assets/images/gallery-1.jpg
-assets/images/gallery-2.jpg
-assets/images/gallery-3.jpg
-```
-
-Example:
-
-```bash
-cp ~/Pictures/campus.jpg assets/images/gallery-1.jpg
-cp ~/Pictures/photo2.jpg assets/images/gallery-2.jpg
-cp ~/Pictures/photo3.jpg assets/images/gallery-3.jpg
-```
-
-Linux filenames are case-sensitive, so `profile.jpg` and `Profile.jpg` are different files.
-
-## 2. Optional LinkedIn link
-
-The résumé names the LinkedIn profile but does not provide the exact profile URL, so the site does not publish an incorrect link.
-
-If you want LinkedIn on the page, open `index.html`, find this comment:
-
-```html
-<!-- Add your exact LinkedIn profile URL here later if you want it public. -->
-```
-
-and add your exact link next to the GitHub/email links.
-
-## 3. Run locally
-
-From this directory:
-
-```bash
-firefox index.html
-```
-
-SSD page:
-
-```bash
-firefox ssdcoursepage.html
-```
-
-A better local test is:
+Clone the repository or open the project directory and run:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open:
+Then visit:
 
 ```text
 http://localhost:8000/
 http://localhost:8000/ssdcoursepage.html
 ```
 
-Stop the server with `Ctrl+C`.
-
-## 4. Create the GitHub repository
-
-On the **Antidote-2002** account, create a public repository named exactly:
+Stop the server with:
 
 ```text
-Antidote-2002.github.io
+Ctrl+C
 ```
 
-If this project folder is on your Desktop:
+The pages can also be previewed using VS Code Live Server.
 
-```bash
-cd ~/Desktop/Antidote-2002.github.io
-```
+---
 
-Initialize Git:
+## GitHub Pages
 
-```bash
-git init
-git branch -M main
-git remote add origin https://github.com/Antidote-2002/Antidote-2002.github.io.git
-```
+The repository is published through GitHub Pages from the `main` branch.
 
-Then:
+Because the repository is named `Antidote-2002.github.io`, the root `index.html` is served as the personal homepage.
 
-```bash
-git add .
-git commit -m "Create personal page and styled SSD course page"
-git push -u origin main
-```
+---
 
-## 5. Enable GitHub Pages
+## Notes
 
-Repository → **Settings → Pages**
-
-Choose:
-
-```text
-Source: Deploy from a branch
-Branch: main
-Folder: / (root)
-```
-
-Save.
-
-## 6. Final URLs
-
-```text
-https://Antidote-2002.github.io/
-https://Antidote-2002.github.io/ssdcoursepage.html
-```
-
-These URLs are already written in `2026202018_htcs.txt`.
-
-## 7. Final checks
-
-Before submission:
-
-- replace all placeholder pictures
-- open both pages locally
-- push every file to GitHub
-- confirm both URLs open in a private/incognito window
-- confirm `2026202018_htcs.txt` has the two correct URLs
-- confirm the résumé PDF is not present anywhere in the repository
-- confirm the personal site lists C++, Python and SQL, not C
-- confirm GATE appears first in the achievements section
-
-
-## Personal narrative used in this version
-
-The portfolio now highlights the academic transition from a B.E. in Civil Engineering at
-Jadavpur University to an M.Tech in CSIS at IIIT Hyderabad, along with the 2026 GATE/ISI/PGEE
-milestones. The visual design uses only HTML and CSS, including CSS Grid/Flexbox, gradients,
-pseudo-elements, hover states, keyframe animation and responsive media queries.
-
-
-## Final visual update
-
-- Main visual accent changed to crimson/red.
-- Personal gallery removed; only `assets/images/profile.jpg` remains as a personal photo.
-- Education is presented with alma-mater imagery for:
-  - IIIT Hyderabad
-  - Jadavpur University
-  - Ramakrishna Mission Vidyabhavan, Midnapore
-- Image credits are documented in `IMAGE_CREDITS.md`.
-- The SSD course-page redesign also uses the red-accent palette.
-
-The alma-mater photos are externally hosted, so they load when the site has an internet connection
-(which GitHub Pages normally does).
-
-
-## Funky red design layer
-
-The final portfolio keeps the crimson/red accent but adds:
-- playful card tilts and hover motion
-- moving gradient text
-- subtle dotted page texture
-- sticker-like labels
-- floating/doodled decorative elements
-- stronger interactive contact cards
-- animated micro-details with reduced-motion support
-
-
-## Private contact form setup
-
-The portfolio intentionally contains **no owner email address** in its HTML, CSS or README.
-
-The form uses Formspree's ID-based endpoint. Before publishing:
-
-1. Create/log in to a Formspree account.
-2. Create a new form and set its destination/target email privately in Formspree.
-3. Open `index.html` and replace:
-
-   `https://formspree.io/f/YOUR_FORM_ID`
-
-   with the endpoint Formspree gives you, for example:
-
-   `https://formspree.io/f/abcdwxyz`
-
-Do **not** put your destination email address into the form action.
-
-The visitor's email field uses `name="email"`, so Formspree can set that visitor as the Reply-To address.
-A hidden `_gotcha` honeypot field is included for basic spam filtering.
-
-### Privacy note
-
-Removing an email from the current site files does not remove it from old Git commits if it was
-published previously. If the repository has already been public with the email in older commits,
-rewrite/remove that Git history separately if you want the old value to stop being recoverable from
-the repository's history.
-
-
-## Browser tab icon
-
-The browser favicon matches the red `AJ` header mark.
-
-Files:
-- `favicon.svg` — primary modern favicon
-- `favicon.ico` — browser compatibility fallback
-- `favicon-32x32.png` — PNG fallback
-- `apple-touch-icon.png` — home-screen/touch icon
-
-
-## Hobbies & Interests section
-
-The personal page now includes hobby cards for:
-- Gaming — FIFA and Call of Duty
-- Watching chess
-- Occasional table tennis
-- Watching football
-- Sketching
-
-The hobby images are generic Unsplash visuals, not personal photographs.
-Their source pages are listed in `IMAGE_CREDITS.md`.
+- The résumé is intentionally not published in this repository.
+- The personal email address is intentionally not written in the public website files.
+- Only the main profile photo is used as a personal photograph.
+- The Ramakrishna Mission campus photo is stored locally so it does not depend on a third-party image hotlink.
+- `IMAGE_CREDITS.md` contains attribution/source information for the external images used by the project.
